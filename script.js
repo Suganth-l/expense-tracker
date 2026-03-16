@@ -22,7 +22,7 @@ function addTransactions(e) {
     })
 
     localStorage.setItem("transactions", JSON.stringify(transactions))
-    
+
     updateTransactionList()
     updateSummary()
 
