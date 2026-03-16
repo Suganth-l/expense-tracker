@@ -72,7 +72,7 @@ function updateSummary() {
     // update ui => todo: fix the formatting
     balanceEl.textContent = formatCurrency(balance);
     incomeAmountEl.textContent = formatCurrency(income);
-    expenseAmountEl.textContent = formatCurrency(expenses);
+    expenseAmountEl.textContent = formatCurrency(Math.abs(expenses));
 }
 
 function formatCurrency(number) {
